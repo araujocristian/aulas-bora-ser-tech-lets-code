@@ -34,6 +34,7 @@
 // console.log(resultado)
 
 const creteFormatContactFor = (software) => {
+<<<<<<< HEAD
   if(software === "programa1") {
     return contato => JSON.stringify(contato)
   }
@@ -56,3 +57,27 @@ const contato = {
 }
 
 console.log(formatContato(contato))
+=======
+    if(software === "programa1") {
+      return contato => JSON.stringify(contato)
+    }
+  
+    if(software === "programa2") {
+      return contato => (
+      `<contato>
+        <nome>${contato.nome}</nome>
+        <telefone>${contato.telefone}</telefone>
+      </contato>
+      `
+    )}
+  }
+  
+  const formatContato = creteFormatContactFor("programa1")
+  
+  const contato = {
+    nome: "Cristian",
+    telefone: '0000000000000'
+  }
+  
+  console.log(formatContato(contato))
+>>>>>>> 48a7f379e2f9431db2708f9d10bbfbda0dacadfb

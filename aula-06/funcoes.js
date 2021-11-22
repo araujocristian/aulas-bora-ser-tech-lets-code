@@ -61,13 +61,25 @@ function helloWorld() {
 
 // Arrow Functions
 
-// const somar = function(num1, num2) {
-//   return num1 + num2;
-// }
+const somar = function(num1, num2) {
+  return num1 + num2;
+}
 
 const somar = (num1, num2) => {
   return num1 + num2;
 }
+
+const obj = {
+  a: 1,
+  b: 2,
+}
+
+const somar = ({a:1}) => obj + 2;
+
+
+
+
+
 
 const show = num1 => console.log(`Mostrando uma função ${num1}`)
 
